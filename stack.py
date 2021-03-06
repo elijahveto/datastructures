@@ -26,3 +26,13 @@ class Stack:
         print(self.items)
 
 
+def reverse(data):
+    stack = Stack()
+    for _ in str(data):
+        stack.push(_)
+    output = ''
+    while not stack.empty():
+        output+= stack.pop()
+    if type(data) == int:
+        return int(output)
+    return output
