@@ -159,6 +159,16 @@ class LinkedList:
         self.head = prev
 
 
+    def reverse_recursive(self, node = 'foo', prev = None):
+        node = self.head if node == 'foo' else node
+        if node:
+            temp = node.next
+            node.next = prev
+            self.reverse_recursive(node = temp, prev = node)
+        else:
+            self.head = prev
+
+
     def merge(self, ll2):
         node1 = self.head
         node2 = ll2.head
@@ -169,6 +179,4 @@ class LinkedList:
                 self.insert(node2.data, prev)
                 prev = prev.next
                 node2 = node2.next
-
-
 
