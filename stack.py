@@ -36,3 +36,5 @@ def reverse(data):
     if type(data) == int:
         return int(output)
     return output
+
+stack = Stack()

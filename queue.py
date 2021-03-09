@@ -9,7 +9,10 @@ class Queue:
         return self.que.pop(0)
 
     def peek(self):
-        return self.que[0]
+        try:
+            return self.que[0]
+        except IndexError:
+            return None
 
 queue = Queue()
 
