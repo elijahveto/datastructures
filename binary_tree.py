@@ -161,23 +161,3 @@ class BinaryTree:
 
 
 
-
-
-
-
-
-
-tree = BinaryTree(1)
-# tree.root.left = Node(2)
-# tree.root.right = Node(3)
-# tree.root.left.left = Node(4)
-# tree.root.left.right = Node(5)
-
-
-#tree.print('reverse')
-tree.insert(2)
-tree.insert(3)
-tree.insert(4)
-tree.insert(5)
-
-
